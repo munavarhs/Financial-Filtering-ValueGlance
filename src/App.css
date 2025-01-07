@@ -1,0 +1,149 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.text-2xl {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+
+label {
+  font-weight: bold;
+}
+
+input {
+  background-color: #333;
+  color: #f5f5f5;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: #00aaff;
+  box-shadow: 0 0 5px #00aaff;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #444;
+}
+
+th {
+  background-color: #333;
+  font-weight: bold;
+}
+
+td {
+  background-color: #222;
+}
+
+tr:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  .p-8 {
+    padding: 1rem;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .space-y-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  input {
+    width: calc(100% - 1rem); /* Ensure proper spacing within the container */
+    margin: 0.25rem auto;
+  }
+
+  button {
+    width: calc(100% - 1rem); /* Ensure proper spacing within the container */
+    margin: 0.25rem auto;
+  }
+
+  th, td {
+    font-size: 0.875rem; /* Reduce font size for table content */
+    padding: 0.25rem;
+  }
+
+  table {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-2xl {
+    font-size: 1.25rem;
+  }
+
+  th, td {
+    font-size: 0.75rem;
+  }
+
+  input, button {
+    font-size: 0.875rem;
+    padding: 0.25rem;
+  }
+}
+
