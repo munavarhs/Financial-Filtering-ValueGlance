@@ -16,4 +16,4 @@
 3. Start the app: `npm run dev`
 
 ## Deployed App
-[Link to deployed app](#)
+[Link to deployed app](https://finance-app-value-glance.netlify.app/)
